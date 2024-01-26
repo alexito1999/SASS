@@ -1,0 +1,207 @@
+/* $tonalidadesPrincipales:("1":$color1,"2":$color2,"3":$color3,"4":$color4); */
+header {
+  overflow: hidden;
+}
+header .cabecera-logo {
+  display: flex;
+  justify-content: center;
+}
+header .cabecera-logo .col-4 {
+  width: 400px;
+}
+header .cabecera-logo .col-4 img {
+  width: 100%;
+}
+header .cabecera-logo h1,
+header .cabecera-logo h2 {
+  color: #c5557c;
+}
+@media (width <= 768px) {
+  header .cabecera-logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+header nav {
+  background-color: #FDE1EB;
+  color: blue;
+  padding: 20px;
+}
+header nav .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .row .col-4 {
+  display: flex;
+  justify-content: center;
+}
+@media (width <= 768px) {
+  header nav .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+header nav a:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+@media (width <= 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.container-cuadrados .facebook {
+  background-color: #72ebcf;
+}
+.container-cuadrados .linkedin {
+  background-color: #96D8FF;
+}
+.container-cuadrados .instagram {
+  background-color: #EB72E7;
+}
+.container-cuadrados .youtube {
+  background-color: #FF7C7C;
+}
+.container-cuadrados .twiter {
+  background-color: #C1C1C1;
+}
+.container-cuadrados .pinterest {
+  background-color: #FFAC56;
+}
+.container-cuadrados .item-cuadrado {
+  display: flex;
+  padding: 10px;
+}
+.container-cuadrados .item-cuadrado .logo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-cuadrados .item-cuadrado .logo svg {
+  width: 100%;
+  min-width: 70px;
+}
+.container-cuadrados .item-cuadrado .contenido {
+  padding: 25px 25px 25px 0;
+}
+.container-cuadrados .item-cuadrado .contenido p {
+  overflow: hidden;
+  text-align: justify;
+}
+
+.colores1 {
+  background-color: #B22222;
+  height: 100px;
+  width: 100%;
+}
+
+.colores2 {
+  background-color: #BFFC55;
+  height: 100px;
+  width: 100%;
+}
+
+.colores3 {
+  background-color: #58BBFA;
+  height: 100px;
+  width: 100%;
+}
+
+.colores4 {
+  background-color: #7D34DB;
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades1 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades1 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades1 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades2 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades2 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades2 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades3 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades3 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades3 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades4 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades4 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+.tonalidades4 {
+  background-image: linear-gradient(to right, #F08080 33%, #B22222 33%, #401010 33%);
+  height: 100px;
+  width: 100%;
+}
+
+/* .colores1::before{
+    content: linear-gradient(#e66465, #9198e5);
+} */
+.informacion {
+  display: flex;
+}
+.informacion p {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=app.css.map */

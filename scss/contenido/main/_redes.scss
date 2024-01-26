@@ -1,0 +1,45 @@
+@use "../../base/mixins" as m;
+@use "../../base/variable" as v;
+
+nav{
+    @include m.centrado-md-xs;
+
+}
+.container-cuadrados{
+
+    .facebook{
+        @include m.background-cuadrado(facebook);
+    }
+    .linkedin{
+        @include m.background-cuadrado(linkedin);
+    }.instagram{
+        @include m.background-cuadrado(instagram);
+    }.youtube{
+        @include m.background-cuadrado(youtube);
+    }.twiter{
+        @include m.background-cuadrado(twiter);
+    }.pinterest{
+        @include m.background-cuadrado(pinterest);
+    }
+    .item-cuadrado{
+        display: flex;
+        padding: 10px;
+        .logo{
+            padding: v.$pading;
+
+            @include m.centrado;
+
+            svg{
+                width:100% ;
+                min-width: 70px;
+            }
+        }
+        .contenido{
+            padding: v.$padingContenido;
+            p{
+                overflow: hidden;
+                text-align: justify;
+            }
+        }
+    }
+}

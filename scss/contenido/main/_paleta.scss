@@ -1,0 +1,29 @@
+@use "../../base/mixins" as m;
+@use "../../base/variable" as v;
+
+@for $i from 1 through 4 {
+  .colores#{$i} {
+    @include m.colores-paleta-tonalidades(color#{$i});
+    height: 100px;
+    width: 100%;
+  }
+}
+@for $i from 1 through 4 {
+
+  @each $numero in v.$tonalidadesPrincipal1 {
+    .tonalidades#{$i} {
+      background-image: linear-gradient(to right, v.$tonalidadesPrincipal1 );
+      height: 100px;
+    width: 100%;
+    }
+  }
+}
+/* .colores1::before{
+    content: linear-gradient(#e66465, #9198e5);
+} */
+.informacion {
+    display: flex;
+  p {
+    font-weight: bold;
+  }
+}

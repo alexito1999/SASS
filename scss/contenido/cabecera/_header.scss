@@ -1,0 +1,42 @@
+@use "../../base/variable" as v;
+@use "../../base/mixins" as m;
+
+header {
+    overflow: hidden;
+  .cabecera-logo {
+    display: flex;
+    justify-content: center;
+    .col-4 {
+       width: v.$anchoImagen;
+      img {
+        width: 100%;
+      }
+    }
+    h1,
+    h2 {
+      color: v.$colorSecundario;
+    }
+    @include m.alinearColumna;
+  }
+
+  nav {
+    background-color: v.$colorPrimario;
+    color: v.$navColor;
+    padding: v.$pading;
+    .row {   
+      .col-4 {
+        display: flex;
+        justify-content: center;
+      }
+      @include m.alinearColumna;
+      @include m.centrado;
+    }
+    a{
+            &:hover {
+              background-color: white;
+              color: black;
+              cursor: pointer;
+            }
+    }
+  }
+}

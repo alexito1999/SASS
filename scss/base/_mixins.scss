@@ -1,0 +1,59 @@
+@use "./variable" as v;
+
+@mixin alinearColumna {
+  @media (width <= 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@mixin centrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin centrado-md-xs {
+  @media (width <= 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@mixin background-cuadrado($color-box) {
+  @if $color-box == facebook {
+    background-color: v.$colorFacebook;
+  } @else if $color-box == linkedin {
+    background-color: v.$colorLinkedin;
+  } @else if $color-box == instagram {
+    background-color: v.$colorInstagram;
+  } @else if $color-box == youtube {
+    background-color: v.$colorYoutube;
+  } @else if $color-box == twiter {
+    background-color: v.$colorTwiter;
+  } @else if $color-box == pinterest {
+    background-color: v.$colorPinterest;
+  }
+}
+
+@mixin colores-paleta($color-paleta) {
+    @if $color-paleta == color1 {
+      background-color: v.$color1;
+    } @else if $color-paleta == color2 {
+      background-color: v.$color2;
+    } @else if $color-paleta == color3 {
+      background-color: v.$color3;
+    } @else if $color-paleta == color4 {
+      background-color: v.$color4;
+    } 
+  }
+  @mixin colores-paleta-tonalidades($color-paleta) {
+    @if $color-paleta == color1 {
+        background-color: v.$color1;
+    } @else if $color-paleta == color2 {
+      background-color: v.$color2;
+    } @else if $color-paleta == color3 {
+      background-color: v.$color3;
+    } @else if $color-paleta == color4 {
+      background-color: v.$color4;
+    } 
+  }
